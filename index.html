@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/2.5.2/rx.all.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react-with-addons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Hello world</h1>
+			<p>This paragraph contains a span [<span id="label"></span>] that listens to the field subject.</p>
+			<p>[<span id="direct-label"></span>] listens directly to the text input.</p>
+			<p id="react"></p>
+			<form>
+				<label for="field">Field:</label>
+				<input id="field" type="text" />
+			</form>
+		</div>
+	</body>
+	<script src="jsx/paragraph.jsx" type="text/jsx"></script>
+	<script type="text/jsx">
+		React.render(<Paragraph value="pineapple" />, document.getElementById('react'));
+	</script>
+	<script type="text/jsx" src="js/index.js"></script>
+</html>
