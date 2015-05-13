@@ -1,0 +1,8 @@
+{
+    // JSHint Default Configuration File (as on JSHint website)
+    // See http://jshint.com/docs/ for more details
+
+    "strict"        : true,     // true: Requires all functions run in ES5 Strict Mode
+    "globalstrict"  : true,     // true: Allow global "use strict" (also enables 'strict')
+    "node"          : true     // Node.js
+}
